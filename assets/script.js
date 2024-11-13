@@ -69,30 +69,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const pointResultElement = document.querySelector('.number-points__result > span');
     const degreeBlocks = document.querySelectorAll('.degree');
     let pointResult = 0;
+    let groupNamesArray = [];
+
+    const countingUniqueNames = (name) => {
+      if (groupNamesArray.includes(name) || name === undefined) return;
+      if (!groupNamesArray.includes(name)) groupNamesArray.push(name);
+    }
 
     const showResult = () => {
-      degreeBlocks.forEach((block) => {
-        block.classList.remove('is-active');
-        if (pointResult >= 5 && pointResult <= 25) degreeBlocks[0].classList.add('is-active');
-        if (pointResult >= 30 && pointResult <= 50) degreeBlocks[1].classList.add('is-active');
-        if (pointResult >= 55 && pointResult <= 75) degreeBlocks[2].classList.add('is-active');
-        if (pointResult >= 80 && pointResult <= 100) degreeBlocks[3].classList.add('is-active');
-      });
+      if (groupNamesArray.length === 5) {
+        degreeBlocks.forEach((block) => {
+          block.classList.remove('is-active');
+          if (pointResult >= 5 && pointResult <= 25) degreeBlocks[0].classList.add('is-active');
+          if (pointResult >= 30 && pointResult <= 50) degreeBlocks[1].classList.add('is-active');
+          if (pointResult >= 55 && pointResult <= 75) degreeBlocks[2].classList.add('is-active');
+          if (pointResult >= 80 && pointResult <= 100) degreeBlocks[3].classList.add('is-active');
+        });
+
+        pointResultElement.textContent = String(pointResult);
+      }
     }
 
     const getResult = () => {
       let newValue = 0;
+
       inputsRadio.forEach((input) => {
         if (input.checked) newValue += Number(input.value) * 5;
       });
 
       pointResult = newValue;
-      pointResultElement.textContent = String(pointResult);
       showResult();
     }
 
     inputsRadio.forEach((inputRadio) => {
-      inputRadio.addEventListener('change', () => getResult());
+      inputRadio.addEventListener('change', () => {
+        let currentGroupName = inputRadio.getAttribute('name');
+
+        countingUniqueNames(currentGroupName);
+        getResult();
+      });
     });
   }
 
