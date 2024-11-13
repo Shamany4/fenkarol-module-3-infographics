@@ -1,0 +1,1050 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.accordion {
+  &.with-gradient {
+    .pictures-bg {
+      max-height: 0;
+      pointer-events: none;
+
+      .molecule,
+      .monster {
+        opacity: 0;
+      }
+    }
+
+    &.is-open {
+      position: relative;
+
+      .pictures-bg {
+        max-height: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        visibility: visible;
+
+        .molecule,
+        .monster {
+          opacity: 1;
+          transition: 0.5s ease;
+        }
+
+        .molecule {
+          position: absolute;
+
+          &.molecule--1 {
+            width: 11px;
+            top: 44px;
+            left: 15px;
+            transition-delay: 0.6s;
+          }
+
+          &.molecule--2 {
+            width: 18px;
+            top: 10px;
+            right: 154px;
+            transition-delay: 0.7s;
+          }
+
+          &.molecule--3 {
+            width: 11px;
+            top: 82px;
+            right: 30px;
+            transition-delay: 0.8s;
+          }
+
+          &.molecule--4 {
+            width: 50px;
+            top: 250px;
+            left: 315px;
+            transition-delay: 0.75s;
+          }
+
+          &.molecule--5 {
+            width: 39px;
+            bottom: 30px;
+            left: 89px;
+            transition-delay: 0.9s;
+          }
+
+          &.molecule--6 {
+            width: 33px;
+            bottom: 67px;
+            right: 43px;
+            transition-delay: 0.6s;
+          }
+
+          &.molecule--7 {
+            width: 17px;
+            bottom: 21px;
+            right: 83px;
+            transition-delay: 1s;
+          }
+        }
+
+        .monster {
+          width: 137px;
+          position: absolute;
+          bottom: 15px;
+          left: 263px;
+          transition-delay: 0.8s;
+        }
+      }
+    }
+
+    @include media(sm) {
+      &.is-open {
+        .pictures-bg {
+          .molecule {
+            &.molecule--6 {
+              bottom: 112px;
+            }
+
+            &.molecule--7 {
+              right: 122px;
+            }
+          }
+
+          .monster {
+            width: 84px;
+            bottom: 13px;
+            left: auto;
+            right: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.classification_ap {
+  .classification_ap__wrapper {
+    margin-bottom: 74px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .classification_ap__col {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .classification__block {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    span {
+      text-align: center;
+      font-family: $ffFuturaPT;
+      font-weight: 500;
+    }
+  }
+
+  .classification_ap__title {
+    padding: 16px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    background: #FBF3F7;
+
+    span {
+      font-family: $ffFuturaPT;
+      color: $COLOR_PINK;
+      font-weight: 500;
+    }
+  }
+
+  .classification_ap__desc {
+    margin-top: 10px;
+    padding-left: 20px;
+    min-height: 108px;
+  }
+
+  @include media(md) {
+    .classification_ap__wrapper {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .classification_ap__title {
+      margin-top: 16px;
+    }
+
+    .classification_ap__desc {
+      min-height: auto;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.symptoms-reactions {
+  .symptoms-reactions__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .symptoms-reactions__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .symptoms-reactions__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    img {
+      width: 96px;
+    }
+
+    span {
+      color: $COLOR_BLACK;
+      font-family: $ffFuturaPT;
+      font-size: 20px;
+      font-weight: $medium;
+    }
+  }
+
+  @include media(md) {
+    .symptoms-reactions__wrapper {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .symptoms-reactions__row {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  @include media(sm) {
+    .symptoms-reactions__block {
+      flex-direction: column;
+      gap: 10px;
+
+      img {
+        width: 70px;
+      }
+    }
+  }
+}
+
+.symptoms-information {
+  .symptoms-information__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .symptoms-information__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    width: 349px;
+  }
+
+  @include media(md) {
+    .symptoms-information__wrapper {
+      flex-direction: column;
+    }
+  }
+
+  @include media(sm) {
+    img {
+      margin-top: 24px;
+    }
+  }
+}
+
+.diagnostic-algorithm {
+  .diagnostic-algorithm__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 37px;
+  }
+
+  .diagnostic-algorithm__block {
+    width: 100%;
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+
+    border-radius: 10px;
+
+    p {
+      text-align: center;
+      color: $COLOR_WHITE;
+    }
+
+    &:nth-child(1) {
+      background: linear-gradient(180deg, #40A7A4 0%, #2E7C79 100%);
+    }
+
+    &:nth-child(2) {
+      background: linear-gradient(180deg, #BC1E6A 0%, #7E1246 100%);
+    }
+  }
+
+  @include media(md) {
+    .diagnostic-algorithm__wrapper {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .diagnostic-algorithm__block {
+      height: auto;
+      min-height: 82px;
+    }
+  }
+}
+
+.warning-block {
+  .warning-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .warning-block__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.line-preparation {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  .line-preparation__count {
+    color: $COLOR_PINK;
+    font-family: $ffFuturaPT;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+  }
+}
+
+.gks-table {
+  max-width: 649px;
+
+  table {
+    thead,
+    tbody {
+      tr {
+        td, th {
+          width: calc(100% / 6);
+          height: 44px;
+
+          border-collapse: collapse;
+
+          text-align: center;
+          vertical-align: middle;
+
+          font-family: $ffFuturaPT;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: $medium;
+          line-height: 100%;
+
+          &:first-child {
+            text-align: left;
+            min-width: 158px;
+          }
+
+          &:not(:last-child) {
+            border-right: 2px solid rgba(#C1BEBE, 0.5);
+          }
+        }
+      }
+    }
+
+    thead {
+      tr {
+        th {
+          padding: 6px 8px;
+
+          color: $COLOR_WHITE;
+          background-color: $COLOR_PINK;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 12px 21px;
+
+          color: $COLOR_BLACK;
+          background-color: $COLOR_WHITE;
+        }
+
+        &:nth-child(2) {
+          td {
+            background-color: #F2F2F2;
+          }
+        }
+      }
+    }
+  }
+
+  @include media(md) {
+    overflow-x: scroll;
+  }
+}
+
+.graph-symptoms {
+  .graph-symptoms__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 77px;
+
+    .block-symptoms {
+      &:first-child {
+        .block-symptoms__heading,
+        .block-symptoms__footer {
+          background: linear-gradient(180deg, #40A7A4 0%, #2E7C79 100%);
+        }
+
+        .block-symptoms__body {
+          border: 1px solid $COLOR_TURQUOISE;
+        }
+      }
+
+      &:last-child {
+        .block-symptoms__heading,
+        .block-symptoms__footer {
+          background: linear-gradient(180deg, #BC1E6A 0%, #7E1246 100%);
+        }
+
+        .block-symptoms__body {
+          border: 1px solid $COLOR_PINK;
+        }
+      }
+    }
+  }
+
+  .block-symptoms {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .block-symptoms__heading {
+      width: 100%;
+      padding: 8px 16px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 40px;
+
+
+      p {
+        font-size: 15px;
+        text-align: center;
+        color: $COLOR_WHITE;
+      }
+    }
+
+    .block-symptoms__body {
+      width: 310px;
+      height: 222px;
+      padding: 16px 24px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 24px;
+
+      p, ul {
+        width: 262px;
+
+        font-size: 15px;
+        line-height: 1;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+
+        li {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .block-symptoms__footer {
+      width: 100%;
+      padding: 8px 16px;
+      border-radius: 10px;
+
+      p {
+        min-height: 44px;
+
+        font-size: 15px;
+        text-align: center;
+        color: $COLOR_WHITE;
+      }
+    }
+  }
+
+  @include media(lg) {
+    .graph-symptoms__wrapper {
+      gap: 15px;
+    }
+    .block-symptoms {
+      .block-symptoms__body {
+        p, ul {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include media(md) {
+    .graph-symptoms__wrapper {
+      flex-direction: column;
+    }
+
+    .block-symptoms {
+      .block-symptoms__footer {
+        height: auto;
+
+        p {
+          min-height: auto;
+        }
+      }
+    }
+  }
+
+  @include media(sm) {
+    .block-symptoms {
+      .block-symptoms__body {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.symptom-calculator {
+  .symptom-calculator__wrapper {
+    padding: 24px 16px;
+    border-radius: 10px;
+    border: 1px solid $COLOR_PINK;
+  }
+}
+
+.number-points {
+  .number-points__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 80px;
+    }
+  }
+
+  .number-points__row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .number-points__result {
+    width: 188px;
+    height: 67px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 2px dashed #EB82B3;
+    background: $COLOR_WHITE;
+
+    span {
+      color: $COLOR_PINK;
+      text-align: center;
+      font-family: $ffFuturaPT;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: $bold;
+      line-height: normal;
+    }
+  }
+
+  @include media(md) {
+    .number-points__wrapper {
+      flex-direction: column;
+    }
+
+    .number-points__row {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+.degree-classification {
+  .degree-classification__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .degree-classification__text {
+    width: 233px;
+    position: relative;
+
+    p {
+      color: $COLOR_PINK;
+      font-family: $ffNotoSans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    img {
+      width: 110px;
+      position: absolute;
+      bottom: -96px;
+      right: 19px;
+    }
+  }
+
+  .degrees {
+    width: 384px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .degree {
+      width: 188px;
+      height: 89px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 10px;
+      border: 2px dashed #EB82B3;
+
+      .degree__quantity {
+        color: $COLOR_PINK;
+        text-align: center;
+        font-family: $ffFuturaPT;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: normal;
+      }
+
+      .degree__level {
+        width: 140px;
+        height: 22px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 40px;
+
+        span {
+          color: $COLOR_BLACK;
+          text-align: center;
+          font-family: $ffFuturaPT;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: $book;
+          line-height: normal;
+        }
+      }
+
+      &:nth-child(1) {
+        .degree__level {
+          background: #C4F7C6;
+        }
+      }
+
+      &:nth-child(2) {
+        .degree__level {
+          background: #FBF19A;
+        }
+      }
+
+      &:nth-child(3) {
+        .degree__level {
+          background: #F8C983;
+        }
+      }
+
+      &:nth-child(4) {
+        .degree__level {
+          background: #F2ABAB;
+        }
+      }
+
+      &.is-active {
+        background: $COLOR_PINK;
+        border: none;
+
+        .degree__quantity {
+          color: $COLOR_WHITE;
+        }
+      }
+    }
+  }
+
+  @include media(lg) {
+    .degree-classification__wrapper {
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .degree-classification__text {
+      width: 100%;
+
+      img {
+        right: 50px;
+      }
+    }
+  }
+
+  @include media(md) {
+    .degree-classification__text {
+      text-align: center;
+
+      img {
+        display: none;
+      }
+    }
+
+    .degrees {
+      width: 100%;
+      .degree {
+        width: calc(100% / 2 - 4px)
+      }
+    }
+  }
+
+  @include media(sm) {
+    .degrees {
+      .degree {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fenkarol-block {
+  .fenkarol-block__wrapper {
+    margin-top: 192px;
+    height: 474px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    background: $COLOR_PINK;
+  }
+
+  .fenkarol-block__bg-circle {
+    width: 356px;
+    height: 324px;
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 356px;
+    background: #F471B8;
+    filter: blur(54px);
+  }
+
+  .fenkarol-block__pack {
+    width: 555px;
+    position: absolute;
+    top: -155px;
+    left: calc(50% - 180px);
+    z-index: 2;
+  }
+
+  .fenkarol-block__title {
+    margin-top: 106px;
+    position: relative;
+    z-index: 2;
+
+    color: $COLOR_WHITE;
+    text-align: center;
+    font-family: $ffFuturaPT;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: normal;
+  }
+
+  .fenkarol-block__icons {
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    gap: 59px;
+
+    .fenkarol-block__icon {
+      &:first-child {
+        p {
+          width: 242px;
+        }
+      }
+
+      &:last-child {
+        p {
+          width: 126px;
+        }
+      }
+    }
+  }
+
+  .fenkarol-block__icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 96px;
+    }
+
+    p {
+      color: $COLOR_WHITE;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: $medium;
+      line-height: normal;
+    }
+  }
+
+  .fenkarol-block__description {
+    width: 184px;
+    height: 184px;
+
+    position: absolute;
+    bottom: 14px;
+    right: calc(50% - 160px);
+    z-index: 2;
+
+    border-radius: 50%;
+    background: rgba($COLOR_WHITE, 0.4);
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: -18.5px;
+      transform: translateY(-50%);
+    }
+
+    p {
+      position: absolute;
+      top: 59px;
+      left: 25px;
+
+      color: $COLOR_WHITE;
+      font-weight: $medium;
+    }
+  }
+
+  .fenkarol-block__pictures {
+    .molecule {
+      position: absolute;
+      z-index: 2;
+      mix-blend-mode: lighten;
+
+      &.molecule--1 {
+        width: 11px;
+        top: 71px;
+        left: 53px;
+      }
+
+      &.molecule--2 {
+        width: 18px;
+        top: 63px;
+        left: 145px;
+      }
+
+      &.molecule--3 {
+        width: 23.21px;
+        height: 23.21px;
+        top: 121px;
+        left: 120px;
+        mix-blend-mode: darken;
+      }
+
+      &.molecule--4 {
+        width: 17px;
+        height: 16px;
+        top: 143px;
+        right: 298px;
+      }
+
+      &.molecule--5 {
+        width: 50px;
+        height: 50px;
+        top: 86px;
+        right: 160px;
+      }
+
+      &.molecule--6 {
+        width: 29px;
+        height: 29px;
+        top: 76px;
+        right: 52px;
+        mix-blend-mode: darken;
+      }
+
+      &.molecule--7 {
+        width: 39px;
+        height: 39px;
+        bottom: 111px;
+        left: 7px;
+      }
+
+      &.molecule--8 {
+        width: 33px;
+        height: 35px;
+        bottom: 15px;
+        left: 53px;
+      }
+
+      &.molecule--9 {
+        width: 11px;
+        height: 12px;
+        bottom: 133px;
+        right: 14px;
+      }
+    }
+
+    .monster {
+      width: 220px;
+      position: absolute;
+      bottom: 0;
+      left: 81px;
+      z-index: 3;
+    }
+  }
+
+  @include media(md) {
+    .fenkarol-block__wrapper {
+      margin-top: 150px;
+      height: auto;
+    }
+
+    .fenkarol-block__bg-circle {
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+
+    .fenkarol-block__icons {
+      align-items: center;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .fenkarol-block__icon {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .fenkarol-block__description {
+      margin-top: 34px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .fenkarol-block__pictures {
+      .molecule {
+        &.molecule--3 {
+          top: 201px;
+          left: 96px;
+        }
+
+        &.molecule--5 {
+          top: 199px;
+          right: 71px;
+        }
+
+        &.molecule--7 {
+          bottom: 313px;
+          left: 79px;
+        }
+      }
+
+      .monster {
+        width: 135px;
+        left: auto;
+        right: 15px;
+      }
+    }
+  }
+
+  @include media(sm) {
+    .fenkarol-block__wrapper {
+      margin-top: 100px;
+    }
+
+    .fenkarol-block__pack {
+      width: 345px;
+      top: -90px;
+      left: calc(50% - 105px);
+    }
+
+    .fenkarol-block__pictures {
+      .monster {
+        width: 120px;
+        right: 0;
+      }
+    }
+  }
+}

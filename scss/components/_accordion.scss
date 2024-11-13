@@ -1,0 +1,153 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.accordion {
+  .accordion__heading {
+    position: relative;
+    z-index: 2;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+    background: $COLOR_LIGHT_PINK;
+  }
+
+  .accordion__title {
+    margin: 0;
+    color: $COLOR_WHITE;
+    font-family: $ffNotoSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .accordion__icon {
+    min-width: 40px;
+    min-height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: $COLOR_WHITE;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 20px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .accordion__content {
+    display: none;
+    padding: 24px;
+  }
+
+  &.is-open {
+    .accordion__icon {
+      img {
+        transform: rotate(180deg);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &.with-gradient {
+    background: linear-gradient(90deg, #741750 0%, #B72081 100%);
+    border-radius: 10px;
+
+    .accordion__heading {
+      background: none;
+    }
+
+    &.is-open {
+      position: relative;
+    }
+  }
+
+  &.with-border {
+    .accordion__heading {
+      border-radius: 10px 10px 0 0;
+    }
+
+    .accordion__content {
+      border: 2px solid $COLOR_PINK;
+      border-top: none;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  &.small-height {
+    .accordion__heading {
+      padding: 16px 8px;
+    }
+  }
+
+  &.accordion--therapy {
+    .accordion__content {
+      padding: 0;
+    }
+  }
+
+  &.only-border {
+    border-radius: 10px;
+    border: 1px solid $COLOR_PINK;
+
+    .accordion__heading {
+      padding: 16px 24px;
+      background: none;
+    }
+
+    .accordion__title {
+      color: $COLOR_PINK;
+      font-family: $ffFuturaPT;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: $medium;
+      line-height: normal;
+    }
+
+    .accordion__icon {
+      transform: rotate(180deg);
+      background: none;
+      border: 1px solid $COLOR_PINK;
+    }
+
+    .accordion__content {
+      padding: 0 24px 24px 24px;
+    }
+
+    &.is-open {
+      .accordion__icon {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  @include media(lg) {
+    .accordion__title {
+      font-size: 20px;
+    }
+  }
+
+  @include media(md) {
+    .accordion__heading {
+      gap: 24px;
+    }
+  }
+
+  @include media(sm) {
+    .accordion__content {
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.auth-token-form {
+    background-color: #F4F5F9;
+    position: relative;
+    margin: 3em 0;
+}
+
+.auth-token-form .content {
+    padding: 30px;
+    padding-right: 400px;
+}
+
+.auth-token-form .title {
+    margin-top: 0;
+}
+
+.auth-token-form .buttons {
+    margin-top: 20px;
+}
+
+.auth-token-form .line {
+    background-color: #CDD3DE;
+    padding-left: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.auth-token-form .bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background-image: url("../img/bg.png");
+    background-position: bottom right;
+}
+
+
+@media screen and (max-width: 991px) {
+    .auth-token-form .bg {
+        display: none;
+    }
+    .auth-token-form .content {
+        padding: 30px;
+        padding-right: 30px;
+    }
+}

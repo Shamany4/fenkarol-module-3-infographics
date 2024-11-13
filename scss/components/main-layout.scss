@@ -1,0 +1,42 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.main-layout {
+  .main-layout__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 93px;
+
+    @include media(xxl) {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+  }
+}
+
+.main-content {
+  width: 745px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(xxl) {
+    width: 100%;
+  }
+}
+
+.quiz-bnr {
+  width: 358px;
+  height: 589px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F5F5F5;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.17);
+
+  @include media(xxl) {
+    margin: 0 auto;
+  }
+
+  @include media(sm) {
+    width: 100%;
+  }
+}

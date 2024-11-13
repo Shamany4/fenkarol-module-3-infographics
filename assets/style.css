@@ -1,0 +1,1365 @@
+@charset "UTF-8";
+html {
+  height: auto !important;
+}
+
+#fenkarol-module-3-infographics {
+  margin-bottom: 50px;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NotoSans"), url("../assets/fonts/NotoSans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NotoSans"), url("../assets/fonts/NotoSans-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 400;
+  src: local("FuturaPT"), url("../assets/fonts/FuturaPT-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 450;
+  src: local("FuturaPT"), url("../assets/fonts/FuturaPT-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 700;
+  src: local("FuturaPT"), url("../assets/fonts/FuturaPT-Bold.woff2") format("woff2");
+}
+#fenkarol-module-3-infographics div {
+  box-sizing: border-box;
+}
+#fenkarol-module-3-infographics .title {
+  margin: 0;
+  color: #000;
+  font-family: "NotoSans", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .title {
+    font-size: 24px;
+  }
+}
+#fenkarol-module-3-infographics .section-title {
+  margin: 0;
+  color: #000000;
+  font-family: "NotoSans", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .section-title {
+    font-size: 18px;
+  }
+}
+#fenkarol-module-3-infographics p {
+  margin: 0;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(81, 79, 79, 0.9);
+}
+#fenkarol-module-3-infographics ul,
+#fenkarol-module-3-infographics ol {
+  margin: 5px 0 0 0;
+  padding: 0 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#fenkarol-module-3-infographics ul li,
+#fenkarol-module-3-infographics ol li {
+  color: rgba(81, 79, 79, 0.9);
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics ul li::before,
+#fenkarol-module-3-infographics ol li::before {
+  content: "•";
+}
+#fenkarol-module-3-infographics ol {
+  padding: 0 0 0 25px;
+  list-style: decimal;
+}
+#fenkarol-module-3-infographics ol li::before {
+  content: "";
+}
+#fenkarol-module-3-infographics .pink-bg {
+  padding: 24px;
+  border-radius: 10px;
+  background: #FBF3F7;
+}
+#fenkarol-module-3-infographics .aqua-bg {
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 40px;
+  background: #C6F1F0;
+}
+#fenkarol-module-3-infographics .align-center {
+  display: flex;
+  justify-content: center;
+}
+#fenkarol-module-3-infographics .align-start {
+  display: flex;
+  align-items: flex-start;
+}
+#fenkarol-module-3-infographics .color-gray {
+  color: rgba(81, 79, 79, 0.9);
+}
+#fenkarol-module-3-infographics .color-black {
+  color: #000000;
+}
+#fenkarol-module-3-infographics .color-pink {
+  color: #BC1E6A;
+}
+#fenkarol-module-3-infographics .color-red {
+  color: #A33737;
+}
+#fenkarol-module-3-infographics .color-turquoise {
+  color: #00938B;
+}
+#fenkarol-module-3-infographics .color-white {
+  color: #FFFFFF;
+}
+#fenkarol-module-3-infographics .fz-14 {
+  font-size: 14px;
+}
+#fenkarol-module-3-infographics .fz-20 {
+  font-size: 20px;
+}
+#fenkarol-module-3-infographics .mt-8 {
+  margin-top: 8px;
+}
+#fenkarol-module-3-infographics .mt-10 {
+  margin-top: 10px;
+}
+#fenkarol-module-3-infographics .mt-14 {
+  margin-top: 14px;
+}
+#fenkarol-module-3-infographics .mt-16 {
+  margin-top: 16px;
+}
+#fenkarol-module-3-infographics .mt-20 {
+  margin-top: 20px;
+}
+#fenkarol-module-3-infographics .mt-24 {
+  margin-top: 24px;
+}
+#fenkarol-module-3-infographics .mt-26 {
+  margin-top: 26px;
+}
+#fenkarol-module-3-infographics .mt-30 {
+  margin-top: 30px;
+}
+#fenkarol-module-3-infographics .mt-35 {
+  margin-top: 35px;
+}
+#fenkarol-module-3-infographics .mt-40 {
+  margin-top: 40px;
+}
+#fenkarol-module-3-infographics .mt-50 {
+  margin-top: 50px;
+}
+#fenkarol-module-3-infographics .mt-56 {
+  margin-top: 56px;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .mt-56 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .mt-56 {
+    margin-top: 24px;
+  }
+}
+#fenkarol-module-3-infographics .mt-60 {
+  margin-top: 60px;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .mt-60 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .mt-60 {
+    margin-top: 24px;
+  }
+}
+#fenkarol-module-3-infographics .mb-24 {
+  margin-bottom: 24px;
+}
+#fenkarol-module-3-infographics .p-0 {
+  padding: 0;
+}
+#fenkarol-module-3-infographics .pl-16 {
+  padding-left: 16px;
+}
+#fenkarol-module-3-infographics .pb-0 {
+  padding-bottom: 0;
+}
+#fenkarol-module-3-infographics .w-medium {
+  font-weight: 450;
+}
+#fenkarol-module-3-infographics .w-bold {
+  font-weight: 700;
+}
+#fenkarol-module-3-infographics .main-layout .main-layout__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 93px;
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-3-infographics .main-layout .main-layout__wrapper {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+#fenkarol-module-3-infographics .main-content {
+  width: 745px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-3-infographics .main-content {
+    width: 100%;
+  }
+}
+#fenkarol-module-3-infographics .quiz-bnr {
+  width: 358px;
+  height: 589px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F5F5F5;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.17);
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-3-infographics .quiz-bnr {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .quiz-bnr {
+    width: 100%;
+  }
+}
+#fenkarol-module-3-infographics .accordion .accordion__heading {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #EA80B1;
+}
+#fenkarol-module-3-infographics .accordion .accordion__title {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: "NotoSans", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .accordion .accordion__icon {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+#fenkarol-module-3-infographics .accordion .accordion__icon:hover {
+  cursor: pointer;
+}
+#fenkarol-module-3-infographics .accordion .accordion__icon img {
+  width: 20px;
+  transition: all 0.3s ease;
+}
+#fenkarol-module-3-infographics .accordion .accordion__content {
+  display: none;
+  padding: 24px;
+}
+#fenkarol-module-3-infographics .accordion.is-open .accordion__icon img {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient {
+  background: linear-gradient(90deg, #741750 0%, #B72081 100%);
+  border-radius: 10px;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient .accordion__heading {
+  background: none;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open {
+  position: relative;
+}
+#fenkarol-module-3-infographics .accordion.with-border .accordion__heading {
+  border-radius: 10px 10px 0 0;
+}
+#fenkarol-module-3-infographics .accordion.with-border .accordion__content {
+  border: 2px solid #BC1E6A;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+#fenkarol-module-3-infographics .accordion.small-height .accordion__heading {
+  padding: 16px 8px;
+}
+#fenkarol-module-3-infographics .accordion.accordion--therapy .accordion__content {
+  padding: 0;
+}
+#fenkarol-module-3-infographics .accordion.only-border {
+  border-radius: 10px;
+  border: 1px solid #BC1E6A;
+}
+#fenkarol-module-3-infographics .accordion.only-border .accordion__heading {
+  padding: 16px 24px;
+  background: none;
+}
+#fenkarol-module-3-infographics .accordion.only-border .accordion__title {
+  color: #BC1E6A;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .accordion.only-border .accordion__icon {
+  transform: rotate(180deg);
+  background: none;
+  border: 1px solid #BC1E6A;
+}
+#fenkarol-module-3-infographics .accordion.only-border .accordion__content {
+  padding: 0 24px 24px 24px;
+}
+#fenkarol-module-3-infographics .accordion.only-border.is-open .accordion__icon {
+  transform: rotate(0deg);
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .accordion .accordion__title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .accordion .accordion__heading {
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .accordion .accordion__content {
+    padding: 12px;
+  }
+}
+#fenkarol-module-3-infographics .tabs {
+  width: 100%;
+}
+#fenkarol-module-3-infographics .tabs .tabs__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+#fenkarol-module-3-infographics .tabs .tabs__heading {
+  width: 344px;
+  max-width: 344px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px 40px 0 0;
+  background: linear-gradient(180deg, #EA80B1 0%, #BD1A6D 100%);
+}
+#fenkarol-module-3-infographics .tabs .tabs__heading span {
+  color: #FFFFFF;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 450;
+}
+#fenkarol-module-3-infographics .tabs .tabs__heading:hover {
+  cursor: pointer;
+}
+#fenkarol-module-3-infographics .tabs .tabs__heading.is-active {
+  background: linear-gradient(180deg, #BC1E6A 0%, #7E1246 100%);
+  box-shadow: 3.626px 3.626px 9.065px 0 rgba(0, 0, 0, 0.25);
+}
+#fenkarol-module-3-infographics .tabs .tabs__content {
+  display: none;
+  width: 100%;
+  padding: 24px;
+  border-radius: 10px;
+  border: 2px solid #BC1E6A;
+}
+#fenkarol-module-3-infographics .tabs .tabs__content.is-active {
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .tabs .tabs__content {
+    border-radius: 0 0 10px 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .tabs .tabs__wrapper {
+    gap: 12px;
+  }
+  #fenkarol-module-3-infographics .tabs .tabs__heading {
+    border-radius: 25px 25px 0 0;
+  }
+}
+#fenkarol-module-3-infographics .btn {
+  padding: 16px 40px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: inline-flex;
+}
+#fenkarol-module-3-infographics .btn:hover {
+  cursor: pointer;
+}
+#fenkarol-module-3-infographics .btn.btn--primary {
+  border-radius: 40px;
+  background: linear-gradient(180deg, #BC1E6A 0%, #7E1246 100%);
+  box-shadow: 3.626px 3.626px 9.065px 0 rgba(0, 0, 0, 0.25);
+}
+#fenkarol-module-3-infographics .btn.btn--primary span {
+  color: #FFFFFF;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .calculator {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+#fenkarol-module-3-infographics .calculator::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 64px;
+  opacity: 0.5;
+  background: #C1BEBE;
+}
+#fenkarol-module-3-infographics .calculator .calculator__symptoms {
+  min-width: 241px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #BC1E6A;
+}
+#fenkarol-module-3-infographics .calculator .calculator__symptoms .calculator__cell {
+  max-width: 100%;
+  justify-content: flex-start;
+}
+#fenkarol-module-3-infographics .calculator .calculator__symptoms .calculator__cell span {
+  text-align: left;
+  color: #FFFFFF;
+}
+#fenkarol-module-3-infographics .calculator .calculator__answer {
+  display: flex;
+  flex-direction: column;
+}
+#fenkarol-module-3-infographics .calculator .calculator__answer .calculator__row:first-child .calculator__cell span {
+  color: #514F4F;
+}
+#fenkarol-module-3-infographics .calculator .calculator__answer .calculator__row:not(:first-child) .calculator__cell {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+}
+#fenkarol-module-3-infographics .calculator .calculator__row {
+  display: flex;
+  flex-direction: row;
+}
+#fenkarol-module-3-infographics .calculator .calculator__cell {
+  height: 60px;
+  max-width: 80px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fenkarol-module-3-infographics .calculator .calculator__cell span {
+  text-align: center;
+  color: #000000;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 1;
+}
+#fenkarol-module-3-infographics .calculator .form_radio {
+  width: 80px;
+  height: 60px;
+  min-width: 80px;
+  min-height: 60px;
+  position: relative;
+}
+#fenkarol-module-3-infographics .calculator .form_radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+}
+#fenkarol-module-3-infographics .calculator .form_radio input:checked + label {
+  border: none;
+  background: #BC1E6A;
+  color: #FFFFFF;
+}
+#fenkarol-module-3-infographics .calculator .form_radio label {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  border-radius: 10px;
+}
+#fenkarol-module-3-infographics .calculator .form_radio label:hover {
+  border: 1px solid #BC1E6A;
+  background: #FBF3F7;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .calculator .calculator__symptoms {
+    min-width: 196px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .calculator {
+    overflow-x: scroll;
+  }
+}
+#fenkarol-module-3-infographics .accordion.with-gradient .pictures-bg {
+  max-height: 0;
+  pointer-events: none;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient .pictures-bg .molecule,
+#fenkarol-module-3-infographics .accordion.with-gradient .pictures-bg .monster {
+  opacity: 0;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open {
+  position: relative;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg {
+  max-height: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  visibility: visible;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule,
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .monster {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule {
+  position: absolute;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--1 {
+  width: 11px;
+  top: 44px;
+  left: 15px;
+  transition-delay: 0.6s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--2 {
+  width: 18px;
+  top: 10px;
+  right: 154px;
+  transition-delay: 0.7s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--3 {
+  width: 11px;
+  top: 82px;
+  right: 30px;
+  transition-delay: 0.8s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--4 {
+  width: 50px;
+  top: 250px;
+  left: 315px;
+  transition-delay: 0.75s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--5 {
+  width: 39px;
+  bottom: 30px;
+  left: 89px;
+  transition-delay: 0.9s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--6 {
+  width: 33px;
+  bottom: 67px;
+  right: 43px;
+  transition-delay: 0.6s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--7 {
+  width: 17px;
+  bottom: 21px;
+  right: 83px;
+  transition-delay: 1s;
+}
+#fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .monster {
+  width: 137px;
+  position: absolute;
+  bottom: 15px;
+  left: 263px;
+  transition-delay: 0.8s;
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--6 {
+    bottom: 112px;
+  }
+  #fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .molecule.molecule--7 {
+    right: 122px;
+  }
+  #fenkarol-module-3-infographics .accordion.with-gradient.is-open .pictures-bg .monster {
+    width: 84px;
+    bottom: 13px;
+    left: auto;
+    right: 29px;
+  }
+}
+#fenkarol-module-3-infographics .classification_ap .classification_ap__wrapper {
+  margin-bottom: 74px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+#fenkarol-module-3-infographics .classification_ap .classification_ap__col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+#fenkarol-module-3-infographics .classification_ap .classification__block {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+#fenkarol-module-3-infographics .classification_ap .classification__block span {
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+#fenkarol-module-3-infographics .classification_ap .classification_ap__title {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #FBF3F7;
+}
+#fenkarol-module-3-infographics .classification_ap .classification_ap__title span {
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  color: #BC1E6A;
+  font-weight: 500;
+}
+#fenkarol-module-3-infographics .classification_ap .classification_ap__desc {
+  margin-top: 10px;
+  padding-left: 20px;
+  min-height: 108px;
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .classification_ap .classification_ap__wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  #fenkarol-module-3-infographics .classification_ap .classification_ap__title {
+    margin-top: 16px;
+  }
+  #fenkarol-module-3-infographics .classification_ap .classification_ap__desc {
+    min-height: auto;
+  }
+  #fenkarol-module-3-infographics .classification_ap .classification_ap__desc br {
+    display: none;
+  }
+}
+#fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+#fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__block img {
+  width: 96px;
+}
+#fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__block span {
+  color: #000000;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  #fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__row {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__block {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #fenkarol-module-3-infographics .symptoms-reactions .symptoms-reactions__block img {
+    width: 70px;
+  }
+}
+#fenkarol-module-3-infographics .symptoms-information .symptoms-information__wrapper {
+  display: flex;
+  align-items: center;
+}
+#fenkarol-module-3-infographics .symptoms-information .symptoms-information__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#fenkarol-module-3-infographics .symptoms-information img {
+  width: 349px;
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .symptoms-information .symptoms-information__wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .symptoms-information img {
+    margin-top: 24px;
+  }
+}
+#fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 37px;
+}
+#fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__block {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+}
+#fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__block p {
+  text-align: center;
+  color: #FFFFFF;
+}
+#fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__block:nth-child(1) {
+  background: linear-gradient(180deg, #40A7A4 0%, #2E7C79 100%);
+}
+#fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__block:nth-child(2) {
+  background: linear-gradient(180deg, #BC1E6A 0%, #7E1246 100%);
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__wrapper {
+    flex-direction: column;
+    gap: 24px;
+  }
+  #fenkarol-module-3-infographics .diagnostic-algorithm .diagnostic-algorithm__block {
+    height: auto;
+    min-height: 82px;
+  }
+}
+#fenkarol-module-3-infographics .warning-block .warning-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#fenkarol-module-3-infographics .warning-block .warning-block__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#fenkarol-module-3-infographics .line-preparation {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+#fenkarol-module-3-infographics .line-preparation .line-preparation__count {
+  color: #BC1E6A;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .gks-table {
+  max-width: 649px;
+}
+#fenkarol-module-3-infographics .gks-table table thead tr td, #fenkarol-module-3-infographics .gks-table table thead tr th,
+#fenkarol-module-3-infographics .gks-table table tbody tr td,
+#fenkarol-module-3-infographics .gks-table table tbody tr th {
+  width: 16.6666666667%;
+  height: 44px;
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%;
+}
+#fenkarol-module-3-infographics .gks-table table thead tr td:first-child, #fenkarol-module-3-infographics .gks-table table thead tr th:first-child,
+#fenkarol-module-3-infographics .gks-table table tbody tr td:first-child,
+#fenkarol-module-3-infographics .gks-table table tbody tr th:first-child {
+  text-align: left;
+  min-width: 158px;
+}
+#fenkarol-module-3-infographics .gks-table table thead tr td:not(:last-child), #fenkarol-module-3-infographics .gks-table table thead tr th:not(:last-child),
+#fenkarol-module-3-infographics .gks-table table tbody tr td:not(:last-child),
+#fenkarol-module-3-infographics .gks-table table tbody tr th:not(:last-child) {
+  border-right: 2px solid rgba(193, 190, 190, 0.5);
+}
+#fenkarol-module-3-infographics .gks-table table thead tr th {
+  padding: 6px 8px;
+  color: #FFFFFF;
+  background-color: #BC1E6A;
+}
+#fenkarol-module-3-infographics .gks-table table tbody tr td {
+  padding: 12px 21px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+#fenkarol-module-3-infographics .gks-table table tbody tr:nth-child(2) td {
+  background-color: #F2F2F2;
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .gks-table {
+    overflow-x: scroll;
+  }
+}
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 77px;
+}
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper .block-symptoms:first-child .block-symptoms__heading,
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper .block-symptoms:first-child .block-symptoms__footer {
+  background: linear-gradient(180deg, #40A7A4 0%, #2E7C79 100%);
+}
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper .block-symptoms:first-child .block-symptoms__body {
+  border: 1px solid #00938B;
+}
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper .block-symptoms:last-child .block-symptoms__heading,
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper .block-symptoms:last-child .block-symptoms__footer {
+  background: linear-gradient(180deg, #BC1E6A 0%, #7E1246 100%);
+}
+#fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper .block-symptoms:last-child .block-symptoms__body {
+  border: 1px solid #BC1E6A;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__heading {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__heading p {
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body {
+  width: 310px;
+  height: 222px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body p, #fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body ul {
+  width: 262px;
+  font-size: 15px;
+  line-height: 1;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body ul {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body ul li {
+  font-size: 15px;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__footer {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+#fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__footer p {
+  min-height: 44px;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper {
+    gap: 15px;
+  }
+  #fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body p, #fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body ul {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .graph-symptoms .graph-symptoms__wrapper {
+    flex-direction: column;
+  }
+  #fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__footer {
+    height: auto;
+  }
+  #fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__footer p {
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .graph-symptoms .block-symptoms .block-symptoms__body {
+    width: 100%;
+  }
+}
+#fenkarol-module-3-infographics .symptom-calculator .symptom-calculator__wrapper {
+  padding: 24px 16px;
+  border-radius: 10px;
+  border: 1px solid #BC1E6A;
+}
+#fenkarol-module-3-infographics .number-points .number-points__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#fenkarol-module-3-infographics .number-points .number-points__wrapper img {
+  width: 80px;
+}
+#fenkarol-module-3-infographics .number-points .number-points__row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#fenkarol-module-3-infographics .number-points .number-points__result {
+  width: 188px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px dashed #EB82B3;
+  background: #FFFFFF;
+}
+#fenkarol-module-3-infographics .number-points .number-points__result span {
+  color: #BC1E6A;
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .number-points .number-points__wrapper {
+    flex-direction: column;
+  }
+  #fenkarol-module-3-infographics .number-points .number-points__row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+#fenkarol-module-3-infographics .degree-classification .degree-classification__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#fenkarol-module-3-infographics .degree-classification .degree-classification__text {
+  width: 233px;
+  position: relative;
+}
+#fenkarol-module-3-infographics .degree-classification .degree-classification__text p {
+  color: #BC1E6A;
+  font-family: "NotoSans", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .degree-classification .degree-classification__text img {
+  width: 110px;
+  position: absolute;
+  bottom: -96px;
+  right: 19px;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees {
+  width: 384px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree {
+  width: 188px;
+  height: 89px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px dashed #EB82B3;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree .degree__quantity {
+  color: #BC1E6A;
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree .degree__level {
+  width: 140px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree .degree__level span {
+  color: #000000;
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree:nth-child(1) .degree__level {
+  background: #C4F7C6;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree:nth-child(2) .degree__level {
+  background: #FBF19A;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree:nth-child(3) .degree__level {
+  background: #F8C983;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree:nth-child(4) .degree__level {
+  background: #F2ABAB;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree.is-active {
+  background: #BC1E6A;
+  border: none;
+}
+#fenkarol-module-3-infographics .degree-classification .degrees .degree.is-active .degree__quantity {
+  color: #FFFFFF;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-3-infographics .degree-classification .degree-classification__wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+  #fenkarol-module-3-infographics .degree-classification .degree-classification__text {
+    width: 100%;
+  }
+  #fenkarol-module-3-infographics .degree-classification .degree-classification__text img {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .degree-classification .degree-classification__text {
+    text-align: center;
+  }
+  #fenkarol-module-3-infographics .degree-classification .degree-classification__text img {
+    display: none;
+  }
+  #fenkarol-module-3-infographics .degree-classification .degrees {
+    width: 100%;
+  }
+  #fenkarol-module-3-infographics .degree-classification .degrees .degree {
+    width: calc(50% - 4px);
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .degree-classification .degrees .degree {
+    width: 100%;
+  }
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__wrapper {
+  margin-top: 192px;
+  height: 474px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #BC1E6A;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__bg-circle {
+  width: 356px;
+  height: 324px;
+  position: absolute;
+  top: 39px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 356px;
+  background: #F471B8;
+  filter: blur(54px);
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pack {
+  width: 555px;
+  position: absolute;
+  top: -155px;
+  left: calc(50% - 180px);
+  z-index: 2;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__title {
+  margin-top: 106px;
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icons {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 59px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icons .fenkarol-block__icon:first-child p {
+  width: 242px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icons .fenkarol-block__icon:last-child p {
+  width: 126px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icon img {
+  width: 96px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icon p {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__description {
+  width: 184px;
+  height: 184px;
+  position: absolute;
+  bottom: 14px;
+  right: calc(50% - 160px);
+  z-index: 2;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__description img {
+  position: absolute;
+  top: 50%;
+  left: -18.5px;
+  transform: translateY(-50%);
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__description p {
+  position: absolute;
+  top: 59px;
+  left: 25px;
+  color: #FFFFFF;
+  font-weight: 450;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule {
+  position: absolute;
+  z-index: 2;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--1 {
+  width: 11px;
+  top: 71px;
+  left: 53px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--2 {
+  width: 18px;
+  top: 63px;
+  left: 145px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--3 {
+  width: 23.21px;
+  height: 23.21px;
+  top: 121px;
+  left: 120px;
+  mix-blend-mode: darken;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--4 {
+  width: 17px;
+  height: 16px;
+  top: 143px;
+  right: 298px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--5 {
+  width: 50px;
+  height: 50px;
+  top: 86px;
+  right: 160px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--6 {
+  width: 29px;
+  height: 29px;
+  top: 76px;
+  right: 52px;
+  mix-blend-mode: darken;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--7 {
+  width: 39px;
+  height: 39px;
+  bottom: 111px;
+  left: 7px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--8 {
+  width: 33px;
+  height: 35px;
+  bottom: 15px;
+  left: 53px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--9 {
+  width: 11px;
+  height: 12px;
+  bottom: 133px;
+  right: 14px;
+}
+#fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .monster {
+  width: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 81px;
+  z-index: 3;
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__wrapper {
+    margin-top: 150px;
+    height: auto;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__bg-circle {
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icons {
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__icon {
+    flex-direction: column;
+    text-align: center;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__description {
+    margin-top: 34px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--3 {
+    top: 201px;
+    left: 96px;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--5 {
+    top: 199px;
+    right: 71px;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .molecule.molecule--7 {
+    bottom: 313px;
+    left: 79px;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .monster {
+    width: 135px;
+    left: auto;
+    right: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__wrapper {
+    margin-top: 100px;
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pack {
+    width: 345px;
+    top: -90px;
+    left: calc(50% - 105px);
+  }
+  #fenkarol-module-3-infographics .fenkarol-block .fenkarol-block__pictures .monster {
+    width: 120px;
+    right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

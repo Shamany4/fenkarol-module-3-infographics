@@ -1,0 +1,420 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* Survey start */
+.survey-popup {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.survey-popup.opened {
+    display: flex;
+}
+
+.survey-popup .popup-overlay {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+}
+
+.survey-popup .popup-container {
+    background-color: white;
+    position: relative;
+    z-index: 110;
+    width: 90%;
+    max-width: 900px;
+}
+
+.survey-popup .content.final-window .head,
+.survey-popup .head .close,
+.survey-popup form .status-message {
+    background-color: #4C4D86;
+}
+
+.survey-popup .head {
+    background-color: #70719E;
+    padding: 20px 30px;
+    padding-right: 60px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-align: left;
+}
+
+.survey-popup .head * {
+    margin: 0;
+}
+
+.survey-popup .head .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.017 3.53552L14.4814 0L8.92786 5.55359L3.53552 0.161255L0 3.69678L5.39233 9.08911L0.339325 14.1421L3.87485 17.6776L8.92786 12.6246L14.1421 17.8389L17.6777 14.3033L12.4634 9.08911L18.017 3.53552Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.survey-popup .head .close:hover {
+    opacity: .9;
+}
+
+.survey-popup .content {
+    padding: 60px;
+    text-align: left;
+}
+
+.survey-popup.success .content {
+    background-color: #67C272;
+}
+
+.survey .content .answers {
+    margin: 40px 0;
+}
+
+.survey-popup .content .answers .container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.survey-popup .content h3 {
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.survey .content .step {
+    display: none;
+}
+
+.survey .content .step.current {
+    display: block;
+}
+
+.survey-popup.success .head .title ,
+.survey-popup.error .head .title {
+    opacity: 0;
+}
+
+.survey.success .form-content ,
+.survey.error .form-content {
+    display: none;
+}
+
+.survey-popup form .status-message {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: none;
+    width: 100%;
+    margin-top: 0;
+}
+.survey-popup .status-message img {
+    width: 137px;
+    height: auto;
+}
+.survey-popup .status-message p {
+    width: 500px;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-top: 15px;
+}
+.survey-popup .content.final-window {
+    background-color: #4C4D86;
+}
+
+.survey form .status-message.opened {
+    display: block !important;
+}
+
+.survey form .status-message.opened {
+    display: flex !important;
+}
+
+.survey form .status-message .result {
+    display: none;
+}
+
+.survey-popup form .status-message .result p {
+    font-size: 2em;
+}
+
+.survey-popup form .status-message .result p.result-final {
+    font-weight: 600;
+}
+
+.survey.with-result form .status-message.opened .result {
+    display: block;
+}
+
+/* Customize the label (the container) */
+.survey .container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.survey .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.survey .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: white;
+    border: 1px solid #7C7C7C;
+    border-radius: 1px;
+}
+
+.survey .input-radio .checkmark {
+    border-radius: 16px;
+}
+
+/* On mouse-over, add a grey background color */
+.survey .container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.survey .container input:checked ~ .checkmark {
+    border: 1px solid #4C4D86;
+    background:#4C4D86 url('../images/check_white.svg') no-repeat center;
+}
+
+/* When the checkbox is checked, add a blue background */
+.survey .container.input-radio input:checked ~ .checkmark {
+    border: 1px solid #4C4D86;
+    background:#4C4D86 url('../images/radio_white.svg') no-repeat center;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.survey .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.survey .container.input-checkbox .checkmark:after {
+    left: 7px;
+    top: 2px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Style the checkmark/indicator */
+.survey .container.input-radio .checkmark:after {
+    content: '';
+    top: 5px;
+    left: 5px;
+    width: 12px;
+    height: 9px;
+}
+
+.survey .button:disabled {
+    background-color: #7c7c7c;
+    border-color: #7c7c7c;
+}
+
+.survey .button {
+    background-color: #4C4D86;
+    border-color: #4C4D86;
+}
+
+@media (max-width: 576.98px) {
+    .survey-popup .head {
+        padding: 10px 20px;
+        padding-right: 70px;
+    }
+    .survey-popup .content {
+        padding: 20px;
+    }
+}
+
+.survey .survey-loader {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.survey .form-loading .survey-loader {
+    display: block;
+}
+.survey .form-loading .form-content {
+    display: none;
+}
+
+.survey .survey-loader .survey-loader-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.survey .survey-loader .survey-loader-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: survey-loader-ring 1.2s linear infinite;
+}
+@keyframes survey-loader-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Survey end */
+
+
+/* Survey block */
+
+
+.survey.survey-block {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: rgba(102,194,114,0.05);
+}
+
+.survey.survey-block .head {
+    border-bottom: 1px solid #66C272;
+}
+
+.survey.survey-block .head .title {
+    font-weight: bold;
+    color: #66C272;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+}
+
+.survey.survey-block .button:not(:disabled) {
+    background-color: #66C272;
+    border-color: #66C272;
+}
+
+.survey.survey-block .survey-loader {
+    margin-top: 30px;
+}
+
+.survey.survey-block .survey-loader .survey-loader-ring:after {
+    border: 6px solid #66C272;
+    border-color: #66C272 transparent #66C272 transparent;
+}
+
+.survey.survey-block .status-message {
+    border: none;
+}
+.survey.survey-block .result {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+}
+.survey.survey-block .result-line {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    padding: 0.5em 1em;
+    justify-content: space-between;
+    margin: .5em 0;
+}
+.survey.survey-block .result-line.result-line-green {
+    background-color: #66C272;
+    color: white;
+}
+.survey.survey-block .result-line p {
+    margin: 0;
+}
+
+
+.survey.survey-block .form-loading .head {
+    display: none;
+}
+
+/* Create a custom checkbox */
+.survey.survey-block .checkmark {
+    border: 1px solid #66C272;
+}
+
+/* On mouse-over, add a grey background color */
+.survey.survey-block .container:hover input ~ .checkmark {
+    background-color: #f2fdf2;
+}
+
+/* When the checkbox is checked, add a blue background */
+.survey.survey-block .container input:checked ~ .checkmark {
+    border: 1px solid #66C272;
+    background:#66C272 url('../images/check_white.svg') no-repeat center;
+}
+
+/* When the checkbox is checked, add a blue background */
+.survey.survey-block .container.input-radio input:checked ~ .checkmark {
+    border: 1px solid #66C272;
+    background:#66C272 url('../images/radio_white.svg') no-repeat center;
+}
+
+.survey-result-block {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: rgba(102,194,114,0.05);
+}
+
+.survey-result-block .res-final {
+    color: #66C272;
+    margin-bottom: 0;
+    font-size: 1.2em;
+}
+
+.survey-result-block h3 {
+    margin-top: 0;
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin media($breakpoint) {
+  $size: map-get($grid-breakpoints, $breakpoint);
+  @if ($size == 0) {
+    @content;
+  }
+  @else {
+    @media screen and (max-width: $size) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Weights
+$book: 400;
+$medium: 450;
+$bold: 700;
+
+// Media breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Fonts
+$ffNotoSans: 'NotoSans', 'Arial', 'Helvetica Neue', sans-serif;
+$ffFuturaPT: 'FuturaPT', 'Arial', 'Helvetica Neue', sans-serif;
+
+// Colors
+$COLOR_GRAY: #636161;
+$COLOR_LIGHT_GRAY: rgba(#514F4F, 0.9);
+$COLOR_BLACK: #000000;
+$COLOR_WHITE: #FFFFFF;
+$COLOR_PINK: #BC1E6A;
+$COLOR_LIGHT_PINK: #EA80B1;
+$COLOR_DARKER_PINK: #C26098;
+$COLOR_LIGHTER_PINK: #FBF3F7;
+$COLOR_TURQUOISE: #00938B;
+$COLOR_RED: #A33737;
+$COLOR_LIGHTER_RED: #E9A8A8;

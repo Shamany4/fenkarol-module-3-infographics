@@ -1,0 +1,26 @@
+// Temp styles
+html {
+  height: auto !important;
+}
+
+#fenkarol-module-3-infographics {
+  margin-bottom: 50px;
+}
+
+
+#fenkarol-module-3-infographics {
+  @import "utils/fonts";
+  @import "utils/variables";
+  @import "utils/mixins";
+  @import "utils/base";
+
+  // Components
+  @import "components/main-layout";
+  @import "components/accordion";
+  @import "components/tabs";
+  @import "components/btn";
+  @import "components/calculator";
+
+  // Pages
+  @import "pages/home";
+}
